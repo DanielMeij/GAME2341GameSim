@@ -1,0 +1,91 @@
+1.
+    string Input;
+    
+    funt ConvertToCaps (Input) {
+        if (Input /= int) {
+            Input.UpCaps;
+            Output: Input;
+        } else {
+            Output: "Error: Do not put in Numbers.";
+        }
+    }
+
+    Output: "Type Sentence: ";
+    Input: Input;
+    ConverttoCaps(Input);
+2.
+    int Number1;
+    int Number2;
+    int Total
+
+    Output: "Type in two numbers";
+    Input: Numner1;
+    Input: Number2;
+    if (Number1 /= string && number2 /= string) {
+        Total = Number1 + Number2;
+        Output: Total;
+    } else {
+        Out "Error: Do not put in strings.";
+    }
+    
+3.
+    int Number;
+    int Total = 0;
+    Bool Repeat = true;
+    string Continue;
+
+    Until (Repeat == false) {
+        Output: "Input a Number: ";
+        Input: Number;
+        Total += Number;
+        Output: "Continue: ";
+        Input: Continue;
+        if (Continue == "Y") {
+            Repeat = true;
+        } ellse if (Continue == "N") {
+            Repeat = false;
+        } else {
+            Output: "Error: Please Input Y/N";
+            Repeat == false;
+        }
+        Output: "Total: " + Total;
+    }
+
+4. 
+    int Number;
+    int Result;
+    Bool Repeat = true;
+    string Continue;
+
+    Until (Repeat == false) {
+        Output: "Input a Number: ";
+        Input: Number;
+        Result = rand(0, Number);
+        Output: "Result: " + Result;
+        if (Continue == "Y") {
+            Repeat = true;
+        } ellse if (Continue == "N") {
+            Repeat = false;
+        } else {
+            Output: "Error: Please Input Y/N";
+            Repeat == false;
+        }
+    }
+
+5.
+    int Number;
+    int Left = 0;
+    int Right = 0;
+
+    for (i, i + 1 = 10) {
+        Number = rand(0, 100);
+        If (Number // 2 = 1) {
+            Output: Number "= Left"
+            left += 1;
+        } else {
+            Output: Number "= Right"
+            Right += 1;
+        }
+    }
+    Output: "Right: " + Right;
+    Output: "Left: " + Left;
