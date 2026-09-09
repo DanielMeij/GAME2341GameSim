@@ -1,0 +1,35 @@
+Int RandomNumber;
+Int Choice;
+Int Tries;
+Bool PlayAgain = True;
+String Answer;
+
+While (PlayAgain == True) {
+   Tries = 0;
+   RandomNumber = Rand(0, 100);
+   Output: "I am thinking of a number Between 1 and 100";
+   While (Tries < 7) {
+      Input: Choice
+      If (Choice == RandomNumber) {
+      Output: "Correct! The Answer was " + RandomNumber;
+      } else {
+      Tries += 1
+      Output: "Incorrect! You Have " + (7 - tries) + "Tries Left. Try Again!";
+      If (Tries == 7) {
+         Output: "Gameover! The Answer was " + RandomNumber;
+         }
+      }
+   }
+   Output: "Do you want to Play Again? Y/N";
+   Input: Answer
+   If (Answer = "Y") {
+      PlayAgain = True;
+      Output: "Lets Play Again!";
+   } ElseIf (Answer = "N") {
+      PlayAgain = False;
+      Output: "Thankyou for Playing";
+   } Else {
+      Output: "Error: Must Be Y/N";
+      Output: "Exiting Program";
+   }
+}
